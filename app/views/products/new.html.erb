@@ -25,7 +25,6 @@
 
       posting.done(function(data) {
         $(".go-here").text(`name: ${data.name} - price: ${data.price} - inventory: ${data.inventory} - description: ${data.description}`)
-        $(".go-here").append(`description: ${data.description}`)
       })
     })
   })
