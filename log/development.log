@@ -2217,3 +2217,18 @@ Processing by ProductsController#create as */*
   Parameters: {"utf8"=>"✓", "authenticity_token"=>"c4ETnPxOGoFKwajlXbbYnb3PsAmYLZzrwvEfxkBOlqZQ5MbAfuISHXn2aOGi1yL/Mpl9s1XJ55399divxdu1OA==", "product"=>{"name"=>"test", "price"=>"100", "description"=>"test", "inventory"=>"100"}}
 [active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (2.21ms)
 Completed 201 Created in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 74.139.8.180 at 2018-01-10 14:24:55 +0000
+Cannot render console from 74.139.8.180! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 74.139.8.180 at 2018-01-10 14:25:11 +0000
+Cannot render console from 74.139.8.180! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XR/JoymFWxTou0cCtHZq3n5xDaIVdxeTgj7lGNxX8BB+ehz/qylTiNuMhwZLF5C88SfAGNiTbOW9OiJxWcLTjg==", "product"=>{"name"=>"rest", "price"=>"10", "description"=>"glkj", "inventory"=>"10"}}
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (1.78ms)
+Completed 201 Created in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
