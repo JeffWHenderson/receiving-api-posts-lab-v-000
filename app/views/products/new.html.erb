@@ -18,8 +18,8 @@
   $(function () {
     $('form').submit(function(e) {
       e.preventDefault()
-
-      console.log(this.serialize)
+      var values = $(this).serialize
+      console.log(values)
     })
   })
 </script>
