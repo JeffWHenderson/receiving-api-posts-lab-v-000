@@ -24,7 +24,8 @@
       var posting = $.post('.posts', values)
 
       posting.done(function(data) {
-        $('go-here').text("test test test")
+        //$('go-here').text("test test test")
+        console.log(data)
       })
     })
   })
