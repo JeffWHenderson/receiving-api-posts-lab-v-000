@@ -18,7 +18,7 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @product = Product.new(product_params)
+    @product = Product.new(product_params) #change back to create... just not persisting for tests
     render json: @product, status: 201
   end
 
