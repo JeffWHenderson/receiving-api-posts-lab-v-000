@@ -2247,3 +2247,20 @@ Processing by ProductsController#create as */*
   Parameters: {"utf8"=>"✓", "authenticity_token"=>"t05uFUeiPYO7BPpJC1l3fzkTaDC7eMhUcZ79UJtuV2eUK7tJxQ41H4gzOk30OI0dtkWlinacsyJOmjo5Hvt0+Q==", "product"=>{"name"=>"test", "price"=>"122", "description"=>"test", "inventory"=>"122"}}
 [active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (2.03ms)
 Completed 201 Created in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 74.139.8.180 at 2018-01-10 14:28:52 +0000
+Cannot render console from 74.139.8.180! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (655.0ms)
+Completed 200 OK in 897ms (Views: 872.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/products" for 74.139.8.180 at 2018-01-10 14:29:10 +0000
+Cannot render console from 74.139.8.180! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ytjhyWbmcycjw+5EmhBMyWd5ADuV77FrP9Pd/vP41U3pvTSV5Ep7uxD0LkBlcbar6C/NgVgLyh0A1xqXdm320w==", "product"=>{"name"=>"macbook air", "price"=>"2000", "description"=>"its a light expensive computer", "inventory"=>"1"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "inventory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "macbook air"], ["description", "its a light expensive computer"], ["inventory", 1], ["price", 2000], ["created_at", "2018-01-10 14:29:10.607704"], ["updated_at", "2018-01-10 14:29:10.607704"]]
+  [1m[35m (8.8ms)[0m  commit transaction
