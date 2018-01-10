@@ -1762,3 +1762,19 @@ Cannot render console from 74.139.8.180! Allowed networks: 127.0.0.1, ::1, 127.0
 Processing by ProductsController#new as HTML
   Rendered products/new.html.erb within layouts/application (761.3ms)
 Completed 200 OK in 788ms (Views: 787.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 74.139.8.180 at 2018-01-10 14:00:27 +0000
+Cannot render console from 74.139.8.180! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"laiX3Y758GvpS1BkYrq+nnUArDXnfo7Y6kTLvbWI18+2zUKBDFX499p8kGCd20T8+lZhjyqa9a7VQAzUMB30UQ==", "product"=>{"name"=>"cars", "price"=>"100", "description"=>"They are fancy", "inventory"=>"2"}, "commit"=>"submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "inventory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "cars"], ["description", "They are fancy"], ["inventory", 2], ["price", 100], ["created_at", "2018-01-10 14:00:27.524080"], ["updated_at", "2018-01-10 14:00:27.524080"]]
+  [1m[36m (7.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://67.205.152.27:54847/products
+Completed 302 Found in 15ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/products" for 74.139.8.180 at 2018-01-10 14:00:27 +0000
+Cannot render console from 74.139.8.180! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
