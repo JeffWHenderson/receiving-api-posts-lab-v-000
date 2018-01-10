@@ -21,7 +21,7 @@
     $('form').submit(function(e) {
       e.preventDefault()
       var values = $(this).serialize()
-      var posting = $.post('.posts', values)
+      var posting = $.post('/posts', values)
 
       posting.done(function(data) {
         //$('go-here').text("test test test")
