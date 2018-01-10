@@ -24,7 +24,8 @@
       var posting = $.post('/products', values)
 
       posting.done(function(data) {
-        $(".go-here").text(`${data.name} \<br\> ${data.price}`)
+        $(".go-here").text(`name: ${data.name} - price: ${data.price} - inventory: ${data.inventory}`)
+          $(".go-here").text(`description: ${data.description}`)
       })
     })
   })
